@@ -1,0 +1,79 @@
+/*o	Crea un archivo style.css.
+	Aplica estilos básicos al body (ej. font-family, margin).
+    Estiliza el <h1> (ej. color, text-align).
+	Estiliza el <input> y el <button> (ej. padding, margin, border, border-radius, cursor: pointer).
+o	Define una clase CSS llamada .tarea-completada que aplique:
+	background-color: #e6ffe6; (un verde muy claro)
+	text-decoration: line-through;
+	color: #555;
+	padding: 8px;
+	margin-bottom: 5px;
+	Utiliza Flexbox para organizar el input y el botón en una misma línea y centrarlos horizontalmente.
+	Implementa una transición CSS en el botón para que su background-color cambie suavemente al pasar el mouse por encima (estado hover).
+*/
+
+
+/* body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  background-color: #5557f5;
+}
+
+/*título */
+h1 {
+  color: #d5f05c;
+  text-align: center;
+}
+
+/* Contenedor formulario*/
+.contenedor-formulario {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* input */
+#tareaInput {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  width: 250px;
+  font-size: 16px;
+}
+
+/*boton */
+#agregarTareaBtn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Clase tareas completadas */
+.tarea-completada {
+  background-color: #e6ffe6;
+  text-decoration: line-through;
+  color: #555;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  list-style: none;
+}
+
+/* Efecto hover para el botón */
+#agregarTareaBtn:hover {
+  background-color: #0056b3;
+}
+
+/*agrupe para que quede todo centrado*/
+.tareascentro{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
