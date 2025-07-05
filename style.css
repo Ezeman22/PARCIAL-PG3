@@ -1,0 +1,27 @@
+h1,p, label {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+li{
+    text-align: center;
+}
+
+#container {
+    background-color: rgb(124, 124, 240);
+    text-align: center;
+    width: 600px;
+}
+
+#boton1:hover {
+    background-color: rgb(156, 165, 243);
+    color: white;
+}
+button {
+    background-color: rgb(228, 147, 56);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

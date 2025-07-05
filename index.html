@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de Tareas</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Practica</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Lista de Tareas</h1>
+    <div id="container">
+        <h1>Lista de tareas</h1>
+        <div>
+            <form id="formulario" submit="" >
+                <label for="tarea">Tarea:</label>
+                <input type="text" id="tarea" name="tarea" required>
+                <button type="submit">Agregar Tarea</button>
+            </form>
+        </div>
 
-  <div class="contenedor-formulario">
-    <input type="text" id="tareaInput" placeholder="Agregar una tarea...">
-    <button id="agregarTareaBtn">Agregar Tarea</button>
-  </div>
-
-  <div class="tareascentro">
-        <!-- Mensaje si no hay tareas -->
-      <p id="noTareasMensaje">No tienes tareas pendientes 😊</p>
-
-      <!-- Lista de tareas -->
-      <ul id="listaDeTareas"></ul>
-  </div>
-  
-
-  <script src="srcipt.js"></script>
+        <div>
+            <ul id="listatareas">
+            <p id="msj">No tiene tareas :)</p>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
